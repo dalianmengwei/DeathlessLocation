@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
                           - 利用定位来达到后台时进程不被杀死，同时又很省电
                         DESC
 
-  spec.homepage         = "https://github.com/AloneMonkey/DeathlessLocationPod"   #Pod的地址
+  spec.homepage         = "https://github.com/dalianmengwei/DeathlessLocation.git"   #Pod的地址
 
   spec.license          = { :type => "BSD", :file => "LICENSE" }          #License
   spec.author           = { "No One" => "dalianmengwei@sohu.com" }   #作者
