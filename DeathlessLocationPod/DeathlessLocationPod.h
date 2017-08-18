@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-
+#import "DeathlessLocation.h"
 
 //! Project version number for DeathlessLocationPod.
 FOUNDATION_EXPORT double DeathlessLocationPodVersionNumber;
