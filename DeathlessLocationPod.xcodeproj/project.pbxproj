@@ -9,25 +9,25 @@
 /* Begin PBXBuildFile section */
 		CE4BCE941F4604A100CD812F /* DeathlessLocationPod.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4BCE931F4604A100CD812F /* DeathlessLocationPod.h */; };
 		CE4BCE961F4604A100CD812F /* DeathlessLocationPod.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CE4BCE951F4604A100CD812F /* DeathlessLocationPod.podspec */; };
-		CE4BCE991F4604A100CD812F /* CaptainHook.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4BCE981F4604A100CD812F /* CaptainHook.h */; };
 		CE4BCE9B1F4604A100CD812F /* DeathlessLocationPod.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4BCE9A1F4604A100CD812F /* DeathlessLocationPod.m */; };
 		CEA050B31F46BC8500666C36 /* BGTask.h in Headers */ = {isa = PBXBuildFile; fileRef = CEA050AF1F46BC8500666C36 /* BGTask.h */; };
 		CEA050B41F46BC8500666C36 /* BGTask.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA050B01F46BC8500666C36 /* BGTask.m */; };
 		CEA050B51F46BC8500666C36 /* DeathlessLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = CEA050B11F46BC8500666C36 /* DeathlessLocation.h */; };
 		CEA050B61F46BC8500666C36 /* DeathlessLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA050B21F46BC8500666C36 /* DeathlessLocation.m */; };
+		CEA050B81F46BDCC00666C36 /* CaptainHook.h in Headers */ = {isa = PBXBuildFile; fileRef = CEA050B71F46BDCC00666C36 /* CaptainHook.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE4BCE901F4604A100CD812F /* DeathlessLocationPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeathlessLocationPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4BCE931F4604A100CD812F /* DeathlessLocationPod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeathlessLocationPod.h; sourceTree = "<group>"; };
 		CE4BCE951F4604A100CD812F /* DeathlessLocationPod.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = DeathlessLocationPod.podspec; sourceTree = "<group>"; };
-		CE4BCE981F4604A100CD812F /* CaptainHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CaptainHook.h; path = CaptainHook/CaptainHook.h; sourceTree = "<group>"; };
 		CE4BCE9A1F4604A100CD812F /* DeathlessLocationPod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeathlessLocationPod.m; sourceTree = "<group>"; };
 		CE4BCE9C1F4604A100CD812F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEA050AF1F46BC8500666C36 /* BGTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGTask.h; sourceTree = "<group>"; };
 		CEA050B01F46BC8500666C36 /* BGTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGTask.m; sourceTree = "<group>"; };
 		CEA050B11F46BC8500666C36 /* DeathlessLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeathlessLocation.h; sourceTree = "<group>"; };
 		CEA050B21F46BC8500666C36 /* DeathlessLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeathlessLocation.m; sourceTree = "<group>"; };
+		CEA050B71F46BDCC00666C36 /* CaptainHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptainHook.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,22 +60,14 @@
 		CE4BCE921F4604A100CD812F /* DeathlessLocationPod */ = {
 			isa = PBXGroup;
 			children = (
+				CEA050B71F46BDCC00666C36 /* CaptainHook.h */,
 				CEA050AE1F46BC8500666C36 /* DeathlessLocationPod */,
 				CE4BCE931F4604A100CD812F /* DeathlessLocationPod.h */,
 				CE4BCE951F4604A100CD812F /* DeathlessLocationPod.podspec */,
 				CE4BCE9A1F4604A100CD812F /* DeathlessLocationPod.m */,
 				CE4BCE9C1F4604A100CD812F /* Info.plist */,
-				CE4BCE971F4604A100CD812F /* CaptainHook */,
 			);
 			path = DeathlessLocationPod;
-			sourceTree = "<group>";
-		};
-		CE4BCE971F4604A100CD812F /* CaptainHook */ = {
-			isa = PBXGroup;
-			children = (
-				CE4BCE981F4604A100CD812F /* CaptainHook.h */,
-			);
-			name = CaptainHook;
 			sourceTree = "<group>";
 		};
 		CEA050AE1F46BC8500666C36 /* DeathlessLocationPod */ = {
@@ -96,8 +88,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA050B81F46BDCC00666C36 /* CaptainHook.h in Headers */,
 				CEA050B31F46BC8500666C36 /* BGTask.h in Headers */,
-				CE4BCE991F4604A100CD812F /* CaptainHook.h in Headers */,
 				CE4BCE941F4604A100CD812F /* DeathlessLocationPod.h in Headers */,
 				CEA050B51F46BC8500666C36 /* DeathlessLocation.h in Headers */,
 			);
