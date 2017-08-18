@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
 
   spec.homepage         = "https://github.com/dalianmengwei/DeathlessLocation"   #Pod的地址
 
-  spec.license          = { :type => "BSD", :file => "LICENSE" }          #License
+  spec.license          = { :type => "MIT", :file => "LICENSE" }          #License
   spec.author           = { "No One" => "dalianmengwei@sohu.com" }   #作者
   spec.social_media_url = "http://weibo.com/myloverlulu"                   #weibo
   spec.platform         = :ios, "8.0"                                     #平台、版本
