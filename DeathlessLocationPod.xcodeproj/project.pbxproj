@@ -11,10 +11,10 @@
 		CE4BCE961F4604A100CD812F /* DeathlessLocationPod.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CE4BCE951F4604A100CD812F /* DeathlessLocationPod.podspec */; };
 		CE4BCE991F4604A100CD812F /* CaptainHook.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4BCE981F4604A100CD812F /* CaptainHook.h */; };
 		CE4BCE9B1F4604A100CD812F /* DeathlessLocationPod.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4BCE9A1F4604A100CD812F /* DeathlessLocationPod.m */; };
-		CE4BCEA71F46051600CD812F /* DeathlessLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4BCEA31F46051600CD812F /* DeathlessLocation.h */; };
-		CE4BCEA81F46051600CD812F /* DeathlessLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4BCEA41F46051600CD812F /* DeathlessLocation.m */; };
-		CE4BCEA91F46051600CD812F /* BGTask.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4BCEA51F46051600CD812F /* BGTask.h */; };
-		CE4BCEAA1F46051600CD812F /* BGTask.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4BCEA61F46051600CD812F /* BGTask.m */; };
+		CEA050B31F46BC8500666C36 /* BGTask.h in Headers */ = {isa = PBXBuildFile; fileRef = CEA050AF1F46BC8500666C36 /* BGTask.h */; };
+		CEA050B41F46BC8500666C36 /* BGTask.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA050B01F46BC8500666C36 /* BGTask.m */; };
+		CEA050B51F46BC8500666C36 /* DeathlessLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = CEA050B11F46BC8500666C36 /* DeathlessLocation.h */; };
+		CEA050B61F46BC8500666C36 /* DeathlessLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA050B21F46BC8500666C36 /* DeathlessLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +24,10 @@
 		CE4BCE981F4604A100CD812F /* CaptainHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CaptainHook.h; path = CaptainHook/CaptainHook.h; sourceTree = "<group>"; };
 		CE4BCE9A1F4604A100CD812F /* DeathlessLocationPod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeathlessLocationPod.m; sourceTree = "<group>"; };
 		CE4BCE9C1F4604A100CD812F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE4BCEA31F46051600CD812F /* DeathlessLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeathlessLocation.h; sourceTree = "<group>"; };
-		CE4BCEA41F46051600CD812F /* DeathlessLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeathlessLocation.m; sourceTree = "<group>"; };
-		CE4BCEA51F46051600CD812F /* BGTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGTask.h; sourceTree = "<group>"; };
-		CE4BCEA61F46051600CD812F /* BGTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGTask.m; sourceTree = "<group>"; };
+		CEA050AF1F46BC8500666C36 /* BGTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGTask.h; sourceTree = "<group>"; };
+		CEA050B01F46BC8500666C36 /* BGTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGTask.m; sourceTree = "<group>"; };
+		CEA050B11F46BC8500666C36 /* DeathlessLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeathlessLocation.h; sourceTree = "<group>"; };
+		CEA050B21F46BC8500666C36 /* DeathlessLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeathlessLocation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 		CE4BCE921F4604A100CD812F /* DeathlessLocationPod */ = {
 			isa = PBXGroup;
 			children = (
-				CE4BCEA21F46051600CD812F /* DeathlessLocation */,
+				CEA050AE1F46BC8500666C36 /* DeathlessLocationPod */,
 				CE4BCE931F4604A100CD812F /* DeathlessLocationPod.h */,
 				CE4BCE951F4604A100CD812F /* DeathlessLocationPod.podspec */,
 				CE4BCE9A1F4604A100CD812F /* DeathlessLocationPod.m */,
@@ -78,15 +78,15 @@
 			name = CaptainHook;
 			sourceTree = "<group>";
 		};
-		CE4BCEA21F46051600CD812F /* DeathlessLocation */ = {
+		CEA050AE1F46BC8500666C36 /* DeathlessLocationPod */ = {
 			isa = PBXGroup;
 			children = (
-				CE4BCEA31F46051600CD812F /* DeathlessLocation.h */,
-				CE4BCEA41F46051600CD812F /* DeathlessLocation.m */,
-				CE4BCEA51F46051600CD812F /* BGTask.h */,
-				CE4BCEA61F46051600CD812F /* BGTask.m */,
+				CEA050AF1F46BC8500666C36 /* BGTask.h */,
+				CEA050B01F46BC8500666C36 /* BGTask.m */,
+				CEA050B11F46BC8500666C36 /* DeathlessLocation.h */,
+				CEA050B21F46BC8500666C36 /* DeathlessLocation.m */,
 			);
-			path = DeathlessLocation;
+			path = DeathlessLocationPod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,10 +96,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA050B31F46BC8500666C36 /* BGTask.h in Headers */,
 				CE4BCE991F4604A100CD812F /* CaptainHook.h in Headers */,
-				CE4BCEA71F46051600CD812F /* DeathlessLocation.h in Headers */,
-				CE4BCEA91F46051600CD812F /* BGTask.h in Headers */,
 				CE4BCE941F4604A100CD812F /* DeathlessLocationPod.h in Headers */,
+				CEA050B51F46BC8500666C36 /* DeathlessLocation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,9 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA050B61F46BC8500666C36 /* DeathlessLocation.m in Sources */,
 				CE4BCE9B1F4604A100CD812F /* DeathlessLocationPod.m in Sources */,
-				CE4BCEAA1F46051600CD812F /* BGTask.m in Sources */,
-				CE4BCEA81F46051600CD812F /* DeathlessLocation.m in Sources */,
+				CEA050B41F46BC8500666C36 /* BGTask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +333,7 @@
 				CE4BCEA11F4604A100CD812F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
