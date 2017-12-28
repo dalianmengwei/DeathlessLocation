@@ -12,4 +12,6 @@
 @interface DeathlessLocation : NSObject<CLLocationManagerDelegate>
 + (DeathlessLocation *) sharedInstance;
 - (void)startLocation;
+- (void)endBgTask;
 @end
+

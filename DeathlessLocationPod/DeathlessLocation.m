@@ -13,6 +13,7 @@
 @property (strong , nonatomic) NSTimer *restarTimer;                //重新开启后台任务定时器
 @property (strong , nonatomic) NSTimer *closeCollectLocationTimer;  //关闭定位定时器 （目的是减少耗电）
 @property (assign , nonatomic) BOOL  isWorking;                     //定位进行中
+@property (assign , nonatomic) BOOL  bgTaskTurnOff;                 //后台任务已关闭
 @end
 @implementation DeathlessLocation
 
@@ -59,6 +60,25 @@
 //后台监听方法
 - (void)applicationEnterBackground
 {
+    //    NSLog(@" in background");
+    //    CLLocationManager *locationManager = [DeathlessLocation shareBGLocation];
+    //    locationManager.delegate = self;
+    //    locationManager.distanceFilter = kCLDistanceFilterNone; // 不移动也可以后台刷新回调
+    //    if ([[UIDevice currentDevice].systemVersion floatValue]>= 8.0)
+    //    {
+    //        [locationManager requestAlwaysAuthorization];
+    //    }
+    //    [locationManager startUpdatingLocation];
+    //    [_bgTask beginNewBackgroundTask];
+}
+
+#pragma mark - 定位
+
+//开启服务
+- (void)startLocation {
+    NSLog(@"开启定位");
+    
+    _bgTaskTurnOff = NO;
     NSLog(@" in background");
     CLLocationManager *locationManager = [DeathlessLocation shareBGLocation];
     locationManager.delegate = self;
@@ -69,13 +89,6 @@
     }
     [locationManager startUpdatingLocation];
     [_bgTask beginNewBackgroundTask];
-}
-
-#pragma mark - 定位
-
-//开启服务
-- (void)startLocation {
-    NSLog(@"开启定位");
     
     if ([CLLocationManager locationServicesEnabled] == NO) {
         NSLog(@"locationServicesEnabled false");
@@ -111,6 +124,10 @@
 //重启定位服务
 -(void)restartLocation
 {
+    if (_bgTaskTurnOff)
+    {
+        return;
+    }
     NSLog(@"重新启动定位");
     CLLocationManager *locationManager = [DeathlessLocation shareBGLocation];
     locationManager.delegate = self;
@@ -120,6 +137,13 @@
     }
     [locationManager startUpdatingLocation];
     [self.bgTask beginNewBackgroundTask];
+}
+
+- (void)endBgTask
+{
+    _bgTaskTurnOff = YES;
+    [self stopLocation];
+    [_bgTask endBackGroundTask:YES];
 }
 
 #pragma mark - delegate
@@ -166,3 +190,4 @@
 }
 
 @end
+
